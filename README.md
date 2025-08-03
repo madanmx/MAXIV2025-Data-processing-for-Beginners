@@ -16,7 +16,7 @@ Install printunl <br/>
 When installed click on prinunl <br/>
 Enter your login details <br/>
 Click Connect <br/>
-Now a MAXIV login webpage opensup and here clcik on MAXIV account <br/>
+Now a MAXIV login webpage opensup and here click on MAXIV account <br/>
 Enter your DUO login credentials and click signin <br/>
 Now you will get a OTP in the app authenticator (I use Microsoft authenticator) use it to connect to the HPC. <br/>
 Download and install the ThinLinc Client interface, which we use as a interface with HPC. <br/>
