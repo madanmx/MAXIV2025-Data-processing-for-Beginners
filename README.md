@@ -27,7 +27,7 @@ Fill the server field wth offline-fe1.maxiv.lu.se <br/>
 Fill it with your username and password <br/>
 When you enter the login details and click connect, A Welcome to ThinLinc page appears. <br/>
 Click Start and Now you are connected with an interface with the HPC!! <br/>
-
+Please use the MAXIV-Github-HPCaccess.pdf as a graphical reference.
 
 
 
