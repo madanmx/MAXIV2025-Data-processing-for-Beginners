@@ -1,0 +1,40 @@
+#!/bin/sh
+
+OUTFILE=`echo $1 | sed -e 's/\.hkl$/.mtz/'`
+CELL=$2
+a=$(sed -n 's/^a[[:space:]]=[[:space:]]//p' $CELL | sed 's/.$//g')
+b=$(sed -n 's/^b[[:space:]]=[[:space:]]//p' $CELL | sed 's/.$//g')
+c=$(sed -n 's/^c[[:space:]]=[[:space:]]//p' $CELL | sed 's/.$//g')
+
+al=$(sed -n 's/^al[[:space:]]=[[:space:]]//p' $CELL | sed 's/....$//g')
+be=$(sed -n 's/^be[[:space:]]=[[:space:]]//p' $CELL | sed 's/....$//g')
+ga=$(sed -n 's/^ga[[:space:]]=[[:space:]]//p' $CELL | sed 's/....$//g')
+
+echo " Input: $1; CELL:$a $b $c $al $be $ga "
+echo "Output: $OUTFILE"
+if [ -e create-mtz.temp.hkl -o -e $OUTFILE ]
+then
+    echo Removing create-mtz.temp.hkl or ${OUTFILE}
+    rm -rf create-mtz.temp.hkl ${OUTFILE}
+fi
+
+ex -c '/End of reflections/
+.,$d
+w create-mtz.temp.hkl
+q!' $1
+
+echo "Running 'f2mtz'..."
+f2mtz HKLIN create-mtz.temp.hkl HKLOUT $OUTFILE > out.html << EOF
+TITLE Reflections from CrystFEL
+NAME PROJECT LOVdarkb9 CRYSTAL LOVdarkb9 DATASET LOVdarkb9
+CELL $a $b $c $al $be $ga
+SYMM P6522
+SKIP 3
+LABOUT H K L IMEAN SIGIMEAN
+CTYPE  H H H J     Q
+FORMAT '(3(F4.0,1X),F10.2,10X,F10.2)'
+EOF
+
+if [ $? -ne 0 ]; then echo "Failed."; exit; fi
+
+echo "Done."
