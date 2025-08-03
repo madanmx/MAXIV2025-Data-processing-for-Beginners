@@ -13,7 +13,7 @@ https://pritunl-white.maxiv.lu.se/ <br/>
 To download printunl, use the link; <br/>
 https://client.pritunl.com/#install <br/>
 Install printunl <br/>
-When installed click on prinunl <br/>
+When installed click on printunl <br/>
 Enter your login details <br/>
 Click Connect <br/>
 Now a MAXIV login webpage opensup and here click on MAXIV account <br/>
