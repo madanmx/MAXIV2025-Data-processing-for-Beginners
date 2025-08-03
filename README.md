@@ -92,6 +92,9 @@ Check the cell distribution using the command <br/>
 Assuming the cell distribution is good we will perform the partialator (using partialator.sh script) to generate hkl files out of stream file <br/>
 `./partialator.sh dataset 6/mmm` <br/>
 This scripts generates three .hkl files dataset.hkl, dataset.hkl1 and dataset.hkl2. Now we will analyze the statistics of these files using the script stats.sh <br/>
+`./stats.sh dataset file.cell 1.5 6/mmm` <br/>
+Check the data quality and assuming you have the best we will go to the next step, to create mtz file from hkl file.
+
 
 
 
