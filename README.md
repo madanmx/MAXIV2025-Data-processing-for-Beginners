@@ -52,7 +52,7 @@ Fox example the general path for offiline data users is where they can process t
 `crystfel` <br/>
 #To see the diffraction images; load any .h5 file and geometry file (file.geom) by clickcing load data <br/>
 #Browse through several images to see the difference between the images with diffraction spots and without diffraction spots <br/>
-#Close this and coma back to previous working folder <br/>
+#Close this and come back to previous working folder <br/>
 `cd /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/process/tutorial/` <br/>
 #Now we will create a simple dataset_run.lst file which will have all the path of h5 file <br/>
 `ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` > make_list_run1.lst <br/>
