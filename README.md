@@ -1,5 +1,5 @@
 # MAXIV2025-Data-processing-for-Beginners
-In this repository you will find the basic level of understanding to access the MAXIV offline cluster and execute the data processing. < br / >
+In this repository you will find the basic level of understanding to access the MAXIV offline cluster and execute the data processing. <br/>
 Make sure you have a DUO account and access it! < br / >
 use the following link < br / >
 https://www.maxiv.lu.se/user-access/duo-guides/duo-account-creation-login/ < br / >
