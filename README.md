@@ -86,7 +86,12 @@ If there is an error please check the .out file. If successful will create strea
 `cd stream_file` <br/>
 Do 'ls' and there be three stream files based on out input `make_list_run1.stream, make_list_run2.stream and make_list_run3.stream` files
 Now cat all stream into one stream file <br/>
-`cat *.stream > run.stream` <br/>
+`cat *.stream > dataset.stream` <br/>
+Check the cell distribution using the command <br/>
+`cell_explorer dataset.stream` <br/>
+Assuming the cell distribution is good we will perform the partialator to generate hkl files out of stream file <br/>
+
+
 
 
 
