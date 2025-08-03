@@ -104,6 +104,7 @@ https://www.geeksforgeeks.org/linux-unix/bash-scripting-introduction-to-bash-and
 https://gitlab.desy.de/thomas.white/crystfel/-/blob/0.11.1/doc/articles/tutorial.rst
 
 If you need to know more about geometry refinement using the new crystfel version please send an email to madan.mx@gmail.com
+Please let me know if there is any suggestion for the improvements.
 
 
 
