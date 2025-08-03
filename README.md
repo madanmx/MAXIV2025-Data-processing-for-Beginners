@@ -59,12 +59,11 @@ Fox example the general path for offiline data users is where they can process t
 #Now do `ls` command in the current directory to see run1.lst file is created <br/>
 #A simple bash script to create a lst file from several runs (use gedit and save) I use vi editor. <br/>
 `gedit make_list.sh` <br/>
-#Type the following command <br/>
 #Type/copy below command to the script <br/>
 `#!/bin/bash` <br/>
-`ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` > make_list_run1.lst <br/>
-`ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` > make_list_run2.lst <br/>
-`ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` > make_list_run3.lst <br/>
+`ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5 > make_list_run1.lst` <br/>
+`ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5 > make_list_run2.lst` <br/>
+`ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5 > make_list_run3.lst` <br/>
 #Script ends here <br/>
 #Save and Close <br/>
 #Now you have the make_list.sh script file <br/>  
@@ -72,7 +71,7 @@ Fox example the general path for offiline data users is where they can process t
 `chmod a+x make_list.sh` <br/>
 #To execute the script type <br/>
 `./make_list.sh` <br/>
-#Now do `ls` command in the current directory to see the nuber of .lst file for example here it will be make_list_run1.lst, make_list_run2.lst and make_list_run3.lst <br/>
+#Now do `ls` command in the current directory to see the nuber of .lst file for example here it will be `make_list_run1.lst, make_list_run2.lst and make_list_run3.lst` files <br/>
 #Get the geometry file (file.geom) with the mask file location (mask.h5) from the beam line scientist and copy it to the present directory. <br/>
 #Copy the cell parameter file to the present directory, file.cell <br/>
 #In the current directory we have .lst file, .geom file and .cell file. <br/>
