@@ -26,7 +26,7 @@ mkdir -p temp;
 mkdir -p stream_files
 
 #change the parmaters acccording to your experiment.
-indexamajig -j \$NPROC -i ${LIST} -g ${GEOMETRY} -o ./stream_files/${LIST}.stream --indexing=mosflm,xgandalf-latt-cell --peaks=peakfinder8 -p $CELL --threshold=$THRESHOLD --int-radius=$INTRADIUS --integration=rings-grad --local-bg-radius=3 --min-snr=$SNR --multi --min-peaks=$MINPEAKS --local-bg-radius=3 --min-pix-count=$MINPIXCOUNT --mille --max-mille-level=0 --temp-dir=./temp > ${LIST}.log 2>&1
+indexamajig -j \$NPROC -i ${LIST} -g ${GEOMETRY} -o ./stream_files/${LIST}.stream --indexing=$INDEXING --peaks=peakfinder8 -p $CELL --threshold=$THRESHOLD --int-radius=$INTRADIUS --integration=rings-grad --local-bg-radius=3 --min-snr=$SNR --multi --min-peaks=$MINPEAKS --local-bg-radius=3 --min-pix-count=$MINPIXCOUNT --mille --max-mille-level=0 --temp-dir=./temp > ${LIST}.log 2>&1
 EOF
 
 done
