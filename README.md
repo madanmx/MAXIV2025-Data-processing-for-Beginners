@@ -93,11 +93,17 @@ Assuming the cell distribution is good we will perform the partialator (using pa
 `./partialator.sh dataset 6/mmm` <br/>
 This scripts generates three .hkl files dataset.hkl, dataset.hkl1 and dataset.hkl2. Now we will analyze the statistics of these files using the script stats.sh <br/>
 `./stats.sh dataset file.cell 1.5 6/mmm` <br/>
-Check the data quality and assuming you have the best we will go to the next step, to create mtz file from hkl file.
+Check the data quality and assuming you have the best we will go to the next step, to create mtz file from hkl file. <br/>
+Use the scipt create-mtz as follows with example; <br/>
+`./create-mtz dataset.hkl file.cell P212121`
 
+If there is an error in the scripts or modify to your comfort use the modren AI tools.
+Refer the following;
+https://www.geeksforgeeks.org/linux-unix/gedit-command-in-linux/ 
+https://www.geeksforgeeks.org/linux-unix/bash-scripting-introduction-to-bash-and-bash-scripting/ 
+https://gitlab.desy.de/thomas.white/crystfel/-/blob/0.11.1/doc/articles/tutorial.rst
 
-
-
+If you need to know more about geometry refinement using the new crystfel version please send an email to madan.mx@gmail.com
 
 
 
