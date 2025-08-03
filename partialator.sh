@@ -9,7 +9,6 @@ $INPUTSTREAM=$1
 sbatch --exclusive  --time=20:00:00 -J partialator -e partialator_%j.err <<EOF
 
 #!/bin/sh
-
 module load gopresto PReSTO
 module load CrystFEL/0.11.1-PReSTO-12.0
 
