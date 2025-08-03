@@ -1,4 +1,4 @@
-# MAXIV2025-Data-processing-for-Beginners
+# MAXIV2025-HPC access and Data-processing-for-Beginners
 In this repository you will find the basic level of understanding to access the MAXIV offline cluster and execute the data processing. <br/>
 Make sure you have a DUO account and access it! <br/>
 use the following link <br/>
