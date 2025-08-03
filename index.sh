@@ -3,7 +3,7 @@
 CELL=file.cell
 GEOMETRY=file.geom
 
-INDEXING=mosflm 
+INDEXING=mosflm #Recommendation; try indexing methods like xgandalf 
 INTRADIUS=2,5,7
 MINPIXCOUNT=2
 MINPEAKS=6
