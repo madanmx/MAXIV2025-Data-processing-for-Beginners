@@ -29,9 +29,9 @@ When you enter the login details and click connect, A Welcome to ThinLinc page a
 Click Start and Now you are connected with an interface with the HPC!! <br/>
 Please use the MAXIV-Github-HPCaccess.pdf as a graphical reference if required.
 
-Get into the directory where you want to process;
-In my case it is /gpfs/offline1/visitors/micromax/
-
+Get into the directory where you want to process the data;
+Fox example the eneral path for offiline data users is  /gpfs/offline1/visitors/micromax/Enter the .h5 path here/
+'cd /gpfs/offline1/visitors/micromax/Enter the .h5 path here/'
 
 
 
