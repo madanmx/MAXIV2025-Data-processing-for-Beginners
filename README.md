@@ -89,7 +89,9 @@ Now cat all stream into one stream file <br/>
 `cat *.stream > dataset.stream` <br/>
 Check the cell distribution using the command <br/>
 `cell_explorer dataset.stream` <br/>
-Assuming the cell distribution is good we will perform the partialator to generate hkl files out of stream file <br/>
+Assuming the cell distribution is good we will perform the partialator (using partialator.sh script) to generate hkl files out of stream file <br/>
+`./partialator.sh dataset 6/mmm` <br/>
+This scripts generates three .hkl files dataset.hkl, dataset.hkl1 and dataset.hkl2. Now we will analyze the statistics of these files using the script stats.sh <br/>
 
 
 
