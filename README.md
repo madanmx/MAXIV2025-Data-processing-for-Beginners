@@ -31,7 +31,7 @@ Please use the MAXIV-Github-HPCaccess.pdf as a graphical reference if required.
 
 Get into the directory where you want to process the data;
 Fox example the eneral path for offiline data users is  /gpfs/offline1/visitors/micromax/Enter the .h5 path here/
-'cd /gpfs/offline1/visitors/micromax/Enter the .h5 path here/'
+`/gpfs/offline1/visitors/micromax/Enter the .h5 path here/`
 
 
 
