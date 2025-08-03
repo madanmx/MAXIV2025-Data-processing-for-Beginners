@@ -1,7 +1,7 @@
 # MAXIV2025-HPC access and Data-processing-for-Beginners
 In this repository you will find the basic level of understanding to access the MAXIV offline cluster and execute the data processing. <br/>
 Make sure you have a DUO account and access it! <br/>
-use the following link <br/>
+Use the following link to access DUO <br/>
 https://www.maxiv.lu.se/user-access/duo-guides/duo-account-creation-login/ <br/>
 Pre-setup; <br/>
 Activate OTP using the link: <br/>
@@ -22,12 +22,12 @@ Now you will get a OTP in the app authenticator (I use Microsoft authenticator) 
 Download and install the ThinLinc Client interface, which we use as a interface with HPC. <br/>
 Link to download, install and its information; <br/>
 https://www.maxiv.lu.se/beamlines-accelerators/controls-it/it-services/remote-desktop/ <br/> 
-When reday with Thinlinc client, open it. <br/>
+When Thinlinc client is installed, open it. <br/>
 Fill the server field wth offline-fe1.maxiv.lu.se <br/>
 Fill it with your username and password <br/>
 When you enter the login details and click connect, A Welcome to ThinLinc page appears. <br/>
 Click Start and Now you are connected with an interface with the HPC!! <br/>
-Please use the MAXIV-Github-HPCaccess.pdf as a graphical reference.
+Please use the MAXIV-Github-HPCaccess.pdf as a graphical reference if required.
 
 Get into the directory where you want to process;
 In my case it is /gpfs/offline1/visitors/micromax/
