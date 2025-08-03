@@ -43,28 +43,38 @@ Fox example the general path for offiline data users is where they can process t
 #Now the first step, create .lst file, which is an input file for the program indexamajig of the crystfel <br/>
 #First check the .h5 files at the directory under raw. <br/>
 `ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` <br/>  
+#Use GUI crystfel to see the .h5 images. Use the following commands to load crystfel in the current directory. <br/>
+#First change directory to where the .h5 files are there <br/>
+`cd /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/ ` <br/> 
+#Now in the current directory load the crystfel <br/>
+`module load gopresto` <br/>
+`module load PReSTO` <br/>
+`crystfel' <br/>
+#To see the diffraction images; load any .h5 file and geometry file (file.geom) by clickcing load data <br/>
+#Browse through several images to see the difference between the images with diffraction spots and without diffraction spots <br/>
+#Close this and coma back to previous working folder <br/>
+`cd /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/process/tutorial/` <br/>
 #Now we will create a simple dataset_run.lst file which will have all the path of h5 file <br/>
 `ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` > make_list_run1.lst <br/>
 #Now do `ls` command in the current directory to see run1.lst file is created <br/>
-# A simple bash script to create a lst file (use gedit and save) I use vi editor. <br/>
+#A simple bash script to create a lst file from several runs (use gedit and save) I use vi editor. <br/>
 `gedit make_list.sh` <br/>
 #Type the following command <br/>
-#!/bin/bash 
+#!/bin/bash <br/>
 `ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` > make_list_run1.lst <br/>
-Save and Close <br/>
-Now you have the make_list.sh script file  
+`ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` > make_list_run2.lst <br/>
+`ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` > make_list_run3.lst <br/>
+#Save and Close <br/>
+#Now you have the make_list.sh script file <br/>  
+#Make it executable using the following command <br/>
+`chmod a+x make_list.sh` <br/>
+#To execute the script type <br/>
+`./make_list.sh` <br/>
+#Now do `ls` command in the current directory to see the nuber of .lst file for example here it will be make_list_run1.lst, make_list_run2.lst and make_list_run3.lst <br/>
+#Get the geometry file (file.geom) with the mask file location (mask.h5) from the beam line scientist and copy it to the present directory. <br/>
+#Copy the cell parameter file to the present directory, file.cell <br/>
+#In the current directory we have .lst file, .geom file and .cell file. <br/>
 
->> chmod a+x make_list.sh 
-
-To execute the script type 
-
->> ./make_list.sh 
-
-Similarly, without copying .h5 files we can create a .lst file of all contents of .h5 files in a directory. Recommended not to use for tutorial session as it may takes some time 
-
-
-
-#Get the geometry file (file.geom) with the mask file location (mask.h5) from the beam line scientist and copy it to the present directory.
 
 
 
