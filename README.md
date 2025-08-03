@@ -29,7 +29,8 @@ When you enter the login details and click connect, A Welcome to ThinLinc page a
 Click Start and Now you are connected with an interface with the HPC!! <br/>
 Please use the MAXIV-Github-HPCaccess.pdf as a graphical reference.
 
-
+Get into the directory where you want to process;
+In my case it is /gpfs/offline1/visitors/micromax/
 
 
 
