@@ -60,10 +60,12 @@ Fox example the general path for offiline data users is where they can process t
 #A simple bash script to create a lst file from several runs (use gedit and save) I use vi editor. <br/>
 `gedit make_list.sh` <br/>
 #Type the following command <br/>
+#****************Type/copy below command to the script******************* <br/>
 #!/bin/bash <br/>
 `ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` > make_list_run1.lst <br/>
 `ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` > make_list_run2.lst <br/>
 `ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` > make_list_run3.lst <br/>
+#************************script ends here************ <br/>
 #Save and Close <br/>
 #Now you have the make_list.sh script file <br/>  
 #Make it executable using the following command <br/>
