@@ -1,5 +1,5 @@
-#!/bin/bash
-#Assume you have to use all .h5 files of a particular run and want to make a dataset.lst file  
-ls /gpfs/offline1/visitors/micromax/path-to-run/*.h5 > dataset.lst
-
+#!/bin/bash 
+ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5 > make_list_run1.lst` 
+ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5 > make_list_run2.lst` 
+ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5 > make_list_run3.lst` 
 
