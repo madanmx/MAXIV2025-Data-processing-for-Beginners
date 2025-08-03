@@ -1,9 +1,8 @@
 #!/bin/bash
 #SBATCH --job-name partialator_micromax
 
-
 #to run
-#./partialator.sh file.stream
+#./partialator.sh dataset.stream
 
 $INPUTSTREAM=$1
 
@@ -16,5 +15,5 @@ module load CrystFEL/0.11.1-PReSTO-12.0
 
 NPROC=$(grep proc /proc/cpuinfo | wc -l )
 
-partialator -j \$NPROC -i $INPUTSTREAM.stream -o $INPUTSTREAM.hkl -y 6/mmm --model=unity --iterations=10  > partialator.log 2>&1
+partialator -j \$NPROC -i $INPUTSTREAM.stream -o $INPUTSTREAM.hkl -y enter-symmetry-value --model=unity --iterations=1  > partialator.log 2>&1
 EOF
