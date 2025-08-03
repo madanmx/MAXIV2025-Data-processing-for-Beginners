@@ -49,7 +49,7 @@ Fox example the general path for offiline data users is where they can process t
 #Now in the current directory load the crystfel <br/>
 `module load gopresto` <br/>
 `module load PReSTO` <br/>
-`crystfel' <br/>
+`crystfel` <br/>
 #To see the diffraction images; load any .h5 file and geometry file (file.geom) by clickcing load data <br/>
 #Browse through several images to see the difference between the images with diffraction spots and without diffraction spots <br/>
 #Close this and coma back to previous working folder <br/>
