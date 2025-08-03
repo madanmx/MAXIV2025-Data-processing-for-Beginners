@@ -82,8 +82,11 @@ In order to confirm the job is running or failed use the squeue command <br/>
 `squeue` <br/>
 Or with specific username <br/>
 `squeue -u username` <br/>
-If there is an error please check the 
-
+If there is an error please check the .out file. If successful will create stream_file directory. <br/>
+`cd stream_file` <br/>
+Do 'ls' and there be three stream files based on out input `make_list_run1.stream, make_list_run2.stream and make_list_run3.stream` files
+Now cat all stream into one stream file <br/>
+`cat *.stream > run.stream` <br/>
 
 
 
