@@ -28,7 +28,7 @@ f2mtz HKLIN create-mtz.temp.hkl HKLOUT $OUTFILE > out.html << EOF
 TITLE Reflections from CrystFEL
 NAME PROJECT LOVdarkb9 CRYSTAL LOVdarkb9 DATASET LOVdarkb9
 CELL $a $b $c $al $be $ga
-SYMM P6522
+SYMM ENTER-SPACEGROUP-HERE
 SKIP 3
 LABOUT H K L IMEAN SIGIMEAN
 CTYPE  H H H J     Q
