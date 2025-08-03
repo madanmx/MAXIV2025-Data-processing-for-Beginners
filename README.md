@@ -61,7 +61,7 @@ Fox example the general path for offiline data users is where they can process t
 `gedit make_list.sh` <br/>
 #Type the following command <br/>
 #****************Type/copy below command to the script******************* <br/>
-#!/bin/bash <br/>
+`#!/bin/bash` <br/>
 `ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` > make_list_run1.lst <br/>
 `ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` > make_list_run2.lst <br/>
 `ls /gpfs/offline1/visitors/micromax/Project_No/Datacollectiondate/Sample name/Run Number/raw/*.h5` > make_list_run3.lst <br/>
