@@ -30,7 +30,7 @@ ex -c '/End of reflections/.,$d | w create-mtz.temp.hkl | q!' "$INPUT_HKL"
 echo "Running 'f2mtz'..."
 f2mtz HKLIN create-mtz.temp.hkl HKLOUT "$OUTFILE" > out.html <<EOF
 TITLE Reflections from CrystFEL
-NAME PROJECT LOVdarkb9 CRYSTAL LOVdarkb9 DATASET LOVdarkb9
+NAME PROJECT PROJECT-NAME CRYSTAL SAMPLE-NAME DATASET DATASET-NAME
 CELL $a $b $c $al $be $ga
 SYMM $SPACEGROUP
 SKIP 3
